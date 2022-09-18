@@ -14,7 +14,10 @@
         android:theme="@style/Theme.TrabalhoDeCRUD"
         tools:targetApi="31">
         <activity
-            android:name=".TelaCadastro"
+            android:name=".TelaCadastroProduto"
+            android:exported="false" />
+        <activity
+            android:name=".TelaCadastroFornecedor"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
