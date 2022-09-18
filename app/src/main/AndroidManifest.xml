@@ -14,6 +14,18 @@
         android:theme="@style/Theme.TrabalhoDeCRUD"
         tools:targetApi="31">
         <activity
+            android:name=".AlterarProduto"
+            android:exported="false" />
+        <activity
+            android:name=".AlterarFornecedor"
+            android:exported="false" />
+        <activity
+            android:name=".ListarFornecedor"
+            android:exported="false" />
+        <activity
+            android:name=".ListarProduto"
+            android:exported="false" />
+        <activity
             android:name=".TelaCadastroProduto"
             android:exported="false" />
         <activity
