@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true" >
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".AlterarProduto">
 
+    <TextView
+        style="@style/text_view"
+        android:id="@+id/cadastro_produto"
+        android:text="@string/alterar_produto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/nome"
+        style="@style/edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastro_produto"
+        android:layout_marginTop="100dp"
+        android:hint="Nome Produto:"/>
+
+    <EditText
+        android:id="@+id/fornecedor"
+        style="@style/edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nome"
+        android:layout_marginTop="25dp"
+        android:hint="Fornecedor:"/>
+
+
+    <EditText
+        android:id="@+id/valor"
+        style="@style/edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fornecedor"
+        android:layout_marginTop="25dp"
+        android:hint="Valor R$:"/>
+
+    <EditText
+        android:id="@+id/quantidade"
+        style="@style/edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valor"
+        android:layout_marginTop="25dp"
+        android:hint="Quantidade:"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enviar"
+        style="@style/Button"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quantidade"
+        android:text="Enviar"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -2,4 +2,6 @@
     <string name="app_name">Trabalho de CRUD</string>
     <string name="cadastro_fornecedor">Cadastro Fornecedor</string>
     <string name="cadastro_produto">Cadastro Produto</string>
+    <string name="alterar_fornecedor">Alterar Fornecedor</string>
+    <string name="alterar_produto">Alterar Produto</string>
 </resources>
