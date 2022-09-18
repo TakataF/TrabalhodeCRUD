@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Trabalho de CRUD</string>
-    <string name="cadastrese">Cadastre-Se</string>
+    <string name="cadastro_fornecedor">Cadastro Fornecedor</string>
+    <string name="cadastro_produto">Cadastro Produto</string>
 </resources>

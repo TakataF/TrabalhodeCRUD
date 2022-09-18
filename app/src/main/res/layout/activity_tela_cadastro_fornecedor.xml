@@ -15,10 +15,11 @@
     <TextView
         style="@style/text_view"
         android:id="@+id/cadastrese"
-        android:text="@string/cadastrese"
+        android:text="@string/cadastro_fornecedor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
 
 
     <EditText
@@ -57,6 +58,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email"
         android:hint="Telefone: "/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enviar"
+        style="@style/Button"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/telefone"
+        android:text="Enviar"/>
 
 
 
