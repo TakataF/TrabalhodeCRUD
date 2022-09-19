@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Supplier {
     @Dao
-    public interface UserDao {
+    public interface SupplierDao {
         @Query("SELECT * FROM supplier")
         List<Supplier> getAll();
 

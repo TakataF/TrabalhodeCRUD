@@ -7,7 +7,7 @@ import com.takata.trabalhodecrud.entities.Product;
 import com.takata.trabalhodecrud.entities.Supplier;
 
 @Database(entities = {Product.class, Supplier.class}, version = 1)
-public class AppDatabase extends RoomDatabase {
-    public abstract class ProductDao productDao();
-    public abstract class SupplierDao supplierDao();
+public abstract class AppDatabase extends RoomDatabase {
+    public abstract com.takata.trabalhodecrud.dao.Product.ProductDao productDao();
+    public abstract com.takata.trabalhodecrud.dao.Supplier.SupplierDao supplierDao();
 }

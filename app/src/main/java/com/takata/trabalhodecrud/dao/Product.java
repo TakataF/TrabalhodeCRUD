@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Product {
     @Dao
-    public interface UserDao {
+    public interface ProductDao {
         @Query("SELECT * FROM product")
         List<Product> getAll();
 
