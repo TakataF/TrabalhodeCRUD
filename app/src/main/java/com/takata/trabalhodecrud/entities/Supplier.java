@@ -10,7 +10,7 @@ public class Supplier {
     public int ID;
 
     @ColumnInfo()
-    public int doc;
+    public String cpfCnpj;
 
     @ColumnInfo()
     public String nome;
