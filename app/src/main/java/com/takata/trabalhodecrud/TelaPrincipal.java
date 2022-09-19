@@ -28,5 +28,14 @@ public class TelaPrincipal extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button produtoBtn = findViewById(R.id.button2);
+        Intent intent2 = new Intent(this, ListarProduto.class);
+        produtoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent2);
+            }
+        });
     }
 }
