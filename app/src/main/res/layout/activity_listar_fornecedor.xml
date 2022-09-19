@@ -16,7 +16,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/adicionar_novo_fornecedor"
         style="@style/Button"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"

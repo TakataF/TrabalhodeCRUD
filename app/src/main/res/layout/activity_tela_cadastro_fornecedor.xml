@@ -33,7 +33,7 @@
 
 
     <EditText
-        android:id="@+id/nome"
+        android:id="@+id/nome_fornecedor"
         style="@style/edit_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,28 +43,28 @@
 
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/email_fornecedor"
         style="@style/edit_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nome"
+        app:layout_constraintTop_toBottomOf="@id/nome_fornecedor"
         android:layout_marginTop="25dp"
         android:hint="E-mail:"/>
 
     <EditText
-        android:id="@+id/telefone"
+        android:id="@+id/telefone_forncedor"
         style="@style/edit_text"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/email_fornecedor"
         android:hint="Telefone: "/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/enviar"
+        android:id="@+id/enviar_fornecedor_add"
         style="@style/Button"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/telefone"
+        app:layout_constraintTop_toBottomOf="@id/telefone_forncedor"
         android:text="Enviar"/>
 
 
