@@ -14,12 +14,12 @@ public interface SupplierDao {
     @Query("SELECT * FROM supplier")
     List<Supplier> getAll();
 
-    @Query("SELECT * FROM supplier WHERE ID IN (:userIds)")
-    List<Supplier> loadAllByIds(int[] userIds);
+    @Query("SELECT * FROM supplier WHERE ID IN (:supplierIds)")
+    List<Supplier> loadAllByIds(int[] supplierIds);
 
     @Insert
-    void insertAll(Supplier... users);
+    void insertAll(Supplier... suppliers);
 
     @Delete
-    void delete(Supplier user);
+    void delete(Supplier supplier);
 }

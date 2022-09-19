@@ -14,12 +14,12 @@ public interface ProductDao {
     @Query("SELECT * FROM product")
     List<Product> getAll();
 
-    @Query("SELECT * FROM product WHERE ID IN (:userIds)")
-    List<Product> loadAllByIds(int[] userIds);
+    @Query("SELECT * FROM product WHERE ID IN (:productIds)")
+    List<Product> loadAllByIds(int[] productIds);
 
     @Insert
-    void insertAll(Product... users);
+    void insertAll(Product... products);
 
     @Delete
-    void delete(Product user);
+    void delete(Product product);
 }
