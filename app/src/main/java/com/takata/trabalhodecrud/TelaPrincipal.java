@@ -3,8 +3,11 @@ package com.takata.trabalhodecrud;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.takata.trabalhodecrud.databases.AppDatabase;
 import com.takata.trabalhodecrud.entities.Product;
@@ -15,15 +18,24 @@ public class TelaPrincipal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Thread newThread = new Thread(() -> {
-            AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-                    AppDatabase.class, "pelegron").build();
-            List<Product> teste = db.productDao().getAll();
-            Log.i("DB", teste.toString());
-            teste.forEach(item -> Log.i("DB", item.name));
-        });
-        newThread.start();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
+        Button fornecedorBtn = findViewById(R.id.button1);
+        Intent intent = new Intent(this, ListarFornecedor.class);
+        fornecedorBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent);
+            }
+        });
+
+        Button produtoBtn = findViewById(R.id.button2);
+        Intent intent2 = new Intent(this, ListarProduto.class);
+        produtoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent2);
+            }
+        });
     }
 }
