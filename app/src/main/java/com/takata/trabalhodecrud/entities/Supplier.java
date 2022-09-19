@@ -5,7 +5,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity
-public class Suplier {
+public class Supplier {
     @PrimaryKey()
     public int ID;
 
